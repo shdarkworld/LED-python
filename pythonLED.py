@@ -18,7 +18,7 @@ def removeTrigger():
 print("Starting the Scrpt")
 if len(sys.argv) != 2:
     """"Checks if number of arguments are right"""
-    print("Wrong number of arguments")
+    print("Wrong number of arguments, please use on, off or flash")
     sys.exit(2)
     
 if sys.argv[1] == "on":
@@ -39,7 +39,7 @@ elif sys.argv[1] == "flash":
     write2LED("/delay_on", "50")
     write2LED("/delay_off", "50")
 else:
-    print("Wrong arguments")
+    print("Wrong arguments, please use only on, off or flash")
     
 print("Script Done")
     
